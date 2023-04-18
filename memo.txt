@@ -1,0 +1,8 @@
+RUN sudo apt-get install -y openssh-server
+RUN sudo apt-get install git-all -y
+git config --global user.name 'onodera-g'
+git config --global user.email 'username@example.com'
+
+git config --global core.editor 'code --wait'
+git config --global merge.tool 'code --wait "$MERGED"'
+git config --global push.default simple
