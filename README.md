@@ -1,2 +1,2 @@
 # abc-fortran
-AtCoder Beginner ContestをFortranで解凍したっけかをアップロードしています。
+AtCoder Beginner ContestをFortranで回答した結果をアップロードしています。
