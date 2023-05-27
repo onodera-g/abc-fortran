@@ -3,3 +3,4 @@
 .devcontainer/
 *.out
 test.f95
+next_permutation.f95
