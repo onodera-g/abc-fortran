@@ -336,8 +336,11 @@ end module mod_hash_map
 program ABC303c
     use mod_hash_map
     integer x, y
-    type(t_hash_map) :: map
+    character(5) a
+    real b
+    type(t_hash_map) :: map, map2
     map = hash_map()
+    map2 = hash_map()
 
     !データの登録
     call map%put(1, 10) !キーを１、値を10として登録
@@ -362,4 +365,14 @@ program ABC303c
     x = map%get(2)
     y = map%get(3)
     write (*, *) x, y
+
+    call map%put(4, 1)
+    call map%put(4, map%get(4) + 1)
+    x = map%get(4)
+    write (*, *) x
+
+    b = 2.0
+    a = 'aaaaa'
+    call map%put(b, 20)
+
 end

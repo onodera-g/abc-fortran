@@ -3,7 +3,8 @@ program abc
     character(2), allocatable :: a(:) !配列数がn、２文字入る
     character(:), allocatable:: S !配列数が2、n文字入る
     character(:), allocatable :: c(:) !配列数がn、n文字入る
-    integer, allocatable:: x(:), y(:)
+    character(1) :: C2(10, 10)
+    integer, allocatable:: x(:), y(:), Ans(:)
 
     !
     i = 1
@@ -15,18 +16,30 @@ program abc
     allocate (x(10), source=[(i, i=1, 10)])
     allocate (y(100))
 
+    !配列の拡張
+    Ans = [integer ::]
+    Ans = [Ans, 1]
+
     !文字の処理
     S = 'abcdefg'
     a = 'ab'
     write (*, *) S(1:1)
     write (*, *) a(i) (i:i + 1)
 
+    !DO文にラベル
+    yoko: do j = 1, 5
+        if (i == 3) exit yoko
+    end do yoko
+
     !入力
-    read (*, '(*(a1))') a !1文字区切りで入力
+    test: do i = 1, 10
+        read (*, '(*(a1))') (C2(i, j), j=1, 10) !1文字区切りで入力
+    end do test
 
     !出力
     write (*, "(a)") 'No'
     write (*, "(a)") 'Yes'
+    write (*, '(a)', advance='no') '改行なし'
     write (*, *) a(i) (i:i + 1)
 
     !文字処理
