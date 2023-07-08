@@ -5,5 +5,5 @@
 *.mod
 *.txt
 test.f95
-*.f95
+
 EXAMPLE/*
