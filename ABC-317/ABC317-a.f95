@@ -1,7 +1,7 @@
 program ABC317a
     implicit none
-    integer, allocatable :: P(:)
     integer i, Ans, N, H, X
+    integer, allocatable :: P(:)
 
     !入力
     read (*, *) N, H, X

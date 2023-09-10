@@ -1,8 +1,8 @@
 module ABC317c_mod
     implicit none
     ! グローバル変数
-    integer(16) distance_max, M, N
     integer(16), allocatable :: A(:), B(:), C(:)
+    integer(16) distance_max, M, N
 end module
 
 program ABC317c
