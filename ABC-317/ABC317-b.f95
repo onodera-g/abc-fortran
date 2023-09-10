@@ -1,7 +1,7 @@
 program ABC317b
     implicit none
-    integer N, i
     integer, allocatable ::  A(:), tmp(:)
+    integer N, i
 
     !入力
     read (*, *) N
