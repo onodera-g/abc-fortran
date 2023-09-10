@@ -5,9 +5,7 @@ program ABC314b
     integer, allocatable :: A(:, :), check_hit(:), C(:)
 
     !初期化
-    cnt = 0
-    check_hit = 0
-    min_C = 99
+    cnt = 0; check_hit = 0; min_C = 99
 
     !入力1
     read (*, *) N
