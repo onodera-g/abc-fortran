@@ -17,7 +17,7 @@ program ABC315b
     end do
     ave = (sum + 1)/2
 
-    !真ん中の日の計算
+    !真ん中の日数を調べる
     do i = 1, M
         if (ave - D(i) > 0) then
             ave = ave - D(i)

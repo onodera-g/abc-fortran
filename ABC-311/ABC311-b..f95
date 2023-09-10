@@ -1,4 +1,4 @@
-program ABC311a
+program ABC311b
     implicit none
     integer i, j, k
     integer N, D, cnt_day, cnt_free, ans
@@ -31,5 +31,4 @@ program ABC311a
 
     !結果の出力
     write (*, *) ans
-
-end program abc311a
+end program abc311b
