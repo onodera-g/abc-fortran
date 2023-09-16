@@ -3,6 +3,7 @@ program abc319a
     character(10) S, top_name(10)
     integer top_num(10), i
 
+    !TOP10の定義
     top_name(1) = 'tourist'; top_num(1) = 3858
     top_name(2) = 'ksun48'; top_num(2) = 3679
     top_name(3) = 'Benq'; top_num(3) = 3658
@@ -14,6 +15,7 @@ program abc319a
     top_name(9) = 'newbiedmy'; top_num(9) = 3516
     top_name(10) = 'semiexp'; top_num(10) = 3481
 
+    !読み込み、結果の出力
     read (*, *) S
     do i = 1, 10
         if (trim(S) == top_name(i)) then
