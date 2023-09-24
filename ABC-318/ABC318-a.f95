@@ -1,4 +1,4 @@
-program abc319a
+program abc318a
     implicit none
     integer N, M, P
     integer ans
@@ -15,4 +15,4 @@ program abc319a
 
     !結果の出力
     write (*, '(i0)') ans
-end program abc319a
+end program abc318a
