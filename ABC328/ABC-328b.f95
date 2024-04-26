@@ -19,7 +19,6 @@ program abc328b
         if (i == 100) cycle
         do j = 1, D(i)
             if (j == 100) cycle
-            !１桁
             if (i < 10) then
                 if (j < 10 .and. j == i) then
                     ans = ans + 1
@@ -45,10 +44,7 @@ program abc328b
                         d3(3) = j/100
                         d3(2) = j/10 - d3(3)*10
                         d3(1) = j - d3(3)*100 - d3(2)*10
-                        if (d3(1) == m3(1) .and. d3(2) == m3(1)) then
-                            ans = ans + 1
-                            !write (*, *) i, j
-                        end if
+                        if (d3(1) == m3(1) .and. d3(2) == m3(1)) ans = ans + 1
                     end if
                 end if
             end if
